@@ -5,11 +5,7 @@
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/fomantic-ui@2.9.3/dist/semantic.min.css">
     <script src="https://cdn.jsdelivr.net/npm/fomantic-ui@2.9.3/dist/semantic.min.js"></script>
-    <script>
-      $('#page_progress').progress({
-        percent: 33
-      });
-    </script>
+    <script src="update_progress.js"></script>
     <link rel="shortcut icon" type="image/png" href="favicon.png">
     <title>Qudūrī class with Meowlana Shadman</title>
   </head>
@@ -36,18 +32,18 @@
        <div class="ui section divider"></div>
       <h2>Progress</h2>
       <h4>Classes completed</h4>
-      <div class="ui progress" data-percent="0">
+      <div class="ui progress" id="class_progress">
         <div class="bar" style="background-color:rgb(0, 127, 172)">
-          <div class="progress">0%</div>
+          <div class="progress"></div>
         </div>
-        <div class="label">0 / 38 classes</div>
+        <div class="label"><span id="classes_completed"></span> / 38 classes</div>
       </div>
       <h4>Pages completed</h4>
-      <div class="ui progress" data-percent="50" id="page_progress">
+      <div class="ui progress" id="page_progress">
         <div class="bar" style="background-color:rgb(31, 127, 118)">
           <div class="progress"></div>
         </div>
-        <div class="label">0 / 192 pages</div>
+        <div class="label"><span id="pages_completed"></span> / 192 pages</div>
       </div>
       <div class="ui section divider"></div>
       <h2>Syllabus</h2>
