@@ -12,3 +12,5 @@ $('#page_progress').progress({
   percent: page_progress
 });
 $('#pages_completed').text(classes);
+
+console.log("Hello world!");
