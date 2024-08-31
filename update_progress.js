@@ -1,5 +1,5 @@
-classes = 0;
-pages = 0;
+classes = 15;
+pages = 100;
 
 class_progress = Math.round(classes*100/38);
 $('#class_progress').progress({
